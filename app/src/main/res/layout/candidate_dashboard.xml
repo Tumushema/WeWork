@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".candidate.CandidateDashboard"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+        </include>
+        <EditText
+            android:id="@+id/search_jobs"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/emailaddress"
+            android:drawableEnd="@drawable/search"
+            android:padding="10dp"
+            android:hint="Search Jobs,location"
+            android:fontFamily="@font/opensansregular"
+            android:singleLine="true"
+            android:paddingTop="10dp"
+            android:drawablePadding="20dp"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/search" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/app_blue"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/search_jobs"
+            android:visibility="gone"
+            android:id="@+id/filter_reset_container"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/app_blue"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:stateListAnimator="@null"
+                android:id="@+id/btn_reset"/>
+        </RelativeLayout>
+
+<!--        <include-->
+<!--            android:id="@+id/listed_jobs"-->
+<!--            android:layout_below="@+id/filter_reset_container"-->
+<!--            layout="@layout/jobs_list"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent">-->
+<!--        </include>-->
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/filter_reset_container"
+    android:id="@+id/displayed_job_list"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Jobs Posted yet!"
+        android:visibility="gone"
+        android:id="@+id/no_jobs_yet"
+        android:layout_below="@+id/displayed_job_list"/>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@drawable/drawer_icon"
+        app:itemBackground="@drawable/drawer_highlight"
+        app:itemTextColor="@drawable/drawer_text"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/dashboard_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

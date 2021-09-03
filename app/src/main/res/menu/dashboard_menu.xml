@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_job"
+        android:title="All Jobs"  />
+</group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_fullprofile"
+            android:icon="@drawable/ic_nav_profile"
+            android:title="Profile" /></group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_resume"
+        android:visible="false"
+            android:icon="@drawable/ic_nav_resume"
+            android:title="Resume" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_jobs"
+            android:icon="@drawable/ic_nav_job"
+            android:visible="false"
+            android:title="All Jobs" />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_job_applied"
+            android:icon="@drawable/applied"
+            android:title="Applied Jobs" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_saved_jobs"
+            android:icon="@drawable/ic_nav_save"
+            android:title="My saved Jobs" />
+    </group>
+    <group android:checkableBehavior="single">
+
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_exit_user"
+            android:icon="@drawable/ic_nav_exit"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

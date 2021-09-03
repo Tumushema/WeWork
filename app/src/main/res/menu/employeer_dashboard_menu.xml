@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/emnav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/compnav_dashboard"
+            android:icon="@drawable/ic_nav_dashboard"
+            android:visible="false"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/compnav_editprofile"
+            android:visible="false"
+            android:icon="@drawable/ic_nav_edit"
+            android:title="Profile" />
+        <item
+            android:id="@+id/emp_mynav_jobs"
+            android:icon="@drawable/ic_nav_job"
+            android:title="My Jobs" />
+
+        <item
+            android:id="@+id/emnav_followers"
+            android:icon="@drawable/ic_nav_follow"
+            android:title="Job applicants " />
+        <item
+            android:id="@+id/empnav_post_job"
+            android:title="Post Job"
+            android:icon="@drawable/ic_nav_post"
+            />
+        <item
+            android:id="@+id/nav_package_details"
+            android:title="Packages"
+            android:visible="false"
+            android:icon="@drawable/ic_nav_package_details"
+            />
+
+        <item
+            android:id="@+id/compnav_candidate_search"
+            android:icon="@drawable/ic_candidate_search"
+            android:visible="false"
+            android:title="Search Candidates" />
+        <item
+            android:id="@+id/compnav_exit"
+            android:icon="@drawable/ic_nav_exit"
+            android:title="Exit" />
+    </group>
+
+
+
+</menu>

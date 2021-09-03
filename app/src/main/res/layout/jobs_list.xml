@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spare_part_listed"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/getajob"
+                android:id="@+id/jobimage">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ref"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/jobimage"
+                android:text="Job Ref:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/ref_id"
+                android:layout_toRightOf="@+id/ref"
+                android:text="S0089"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tit"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/jobimage"
+                android:layout_below="@+id/ref"/>
+            <TextView
+                android:id="@+id/jobname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cleaning compound"
+                android:layout_marginStart="5dp"
+                android:maxLength="20"
+                android:fontFamily="@font/opensanslight"
+                android:layout_marginTop="30dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tit"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobname"
+                android:layout_toRightOf="@+id/jobimage"
+                android:id="@+id/lov"
+                android:layout_marginTop="10dp"
+                android:text="Location :"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/joblocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:maxLength="30"
+                android:layout_below="@id/jobname"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/lov"
+                android:fontFamily="@font/opensanslight"
+                android:text="kiswahili prisons kakoba Mbarara"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Salary:"
+                android:id="@+id/sas"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/jobimage"
+                android:layout_below="@+id/lov"/>
+            <TextView
+                android:id="@+id/jobprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF5722"
+                android:layout_below="@id/joblocation"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/sas"
+                android:fontFamily="@font/opensanslight"
+                android:text="Ugx 50,000"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/jobcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#2196F3"
+                android:layout_below="@id/joblocation"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@+id/jobprice"
+                android:fontFamily="@font/opensanslight"
+                android:text="Full-Time"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/posted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF5722"
+                android:layout_below="@id/jobprice"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/jobimage"
+                android:fontFamily="@font/opensanslight"
+                android:text="Closing Date"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/jobdeadline_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#2196F3"
+                android:layout_below="@id/jobprice"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/posted"
+                android:fontFamily="@font/opensanslight"
+                android:text="11/11/2020"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/share_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/share"
+                android:layout_toRightOf="@+id/jobimage"
+                android:layout_below="@id/posted" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:fontFamily="@font/opensansregular"
+                android:id="@+id/jobshare"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:layout_toRightOf="@id/share_tip"
+                android:layout_below="@id/posted"
+                android:textColor="@color/colorPrimary"
+                android:layout_toEndOf="@id/share_tip"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/jobshare"
+                android:id="@+id/jobsaved"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/posted"
+                android:src="@drawable/heart"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/jobshare"
+                android:id="@+id/jobdetails"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="47dp"
+                android:layout_below="@id/posted"
+                android:text="View Details"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Apply Now"
+                android:id="@+id/apply_now"
+                android:layout_marginBottom="10dp"
+                android:background="@color/google_red"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensansbold"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toRightOf="@+id/jobimage"
+                android:layout_below="@+id/jobdetails"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
